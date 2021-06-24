@@ -28,8 +28,8 @@ This causes the bot to send a message with the sunglasses emoji whenever a comma
 contains "cool", and one of several possible responses when the command contains
 "bot" or "Bot"
 
-To use /gif create a [tenor gif api key](https://tenor.com/developer/dashboard) and
-make sure to define it in your .discord.json as described in the next step
+To use `/gif` create a [tenor gif api key](https://tenor.com/developer/dashboard) and
+make sure to define it in your `.discord.json` as described in the next step
 
 5. Create a file called `.discord.json` in the root of this directory and place the
 application secret under key `token` that should look like:
