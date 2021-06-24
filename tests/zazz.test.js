@@ -25,7 +25,8 @@ test('zazz matches only on expected words', () => {
   const shouldPass = [
     'djpwaojdwbill',
     'djpwaojdwBill',
-    'idk my bff bill'
+    'idk my bff bill',
+    'Andrew'
   ];
 
   shouldPass.map(m => zazz.up(m, obj.sendFn));
