@@ -8,14 +8,14 @@ const zazz = require('./zazz.js');
 const MAINTENANCE_MODE = false;
 
 client.on('ready', () => {
-  console.log('I am ready!');
+  console.log('Discord client ready');
 });
 
 client.on('message', message => {
   if (MAINTENANCE_MODE && message.content[0] === prefix) {
     const cmd = message.content.substr(1).trim();
     console.log(`${message.author.username} is attempting to run craps cmd: ${cmd}`);
-    message.channel.send('Maintenance mode (Andrew broke something) be back shortly...');
+    return message.channel.send('Maintenance mode (Andrew broke something) be back shortly...');
   }
 
   zazz.up(message.content, (msg) => message.channel.send(msg));
