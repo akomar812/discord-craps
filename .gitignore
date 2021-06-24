@@ -1,2 +1,4 @@
 **/node_modules
+**/coverage
 .discord.json
+.zazz.json
