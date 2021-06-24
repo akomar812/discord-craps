@@ -14,7 +14,7 @@ the root of this directory. An example zazz file looks like:
   "cool": [
     ":sunglasses:"
   ],
-  "[bB][oO][tT]": [
+  "[bB]ot": [
     ":robot_face:",
     "beep boop",
     "I am not a :computer:",
