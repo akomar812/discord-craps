@@ -1,7 +1,7 @@
 'use strict';
 const prefix = '!';
 const Discord = require('discord.js');
-const craps = require('../craps').asyncInterface({ prefix });
+const craps = require('../craps').textInterface({ prefix });
 const client = new Discord.Client();
 const token = require('./.discord.json').token;
 const zazz = require('./zazz.js');
