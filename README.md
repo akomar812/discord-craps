@@ -39,7 +39,8 @@ the root of the bot directory. An example zazz file looks like:
   "[bB]ot": [
     ":robot_face:",
     "beep boop",
-    "I am not a :computer:"
+    "I am not a :computer:",
+    "/giphy 'never gonna give you up'"
   ]
 }
 ```
