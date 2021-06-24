@@ -3,15 +3,16 @@ Discord bot for playing multiplayer [craps](https://github.com/akomar812/craps)
 
 # Usage
 1. Setup application: https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot
-2. Add bot to server: https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links
-3. Add bot to channel that you would like to play on (currently only one channel is supported so a bot in multiple channels will manage the same game)
-4. Start bot server
+2. Create a file called `.discord.json` in the root of this directory and place the application secret under key `token`
+3. Add bot to server: https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links
+4. Add bot to channel that you would like to play on (currently only one channel is supported so a bot in multiple channels will manage the same game)
+5. Start bot server
 
 ```
 npm run start
 ```
 
-5. Verify bot is running by sending `!help` in discord channel, you should see:
+6. Verify bot is running by sending `!help` in discord channel, you should see:
 
 ```
 craps game
@@ -28,19 +29,19 @@ craps game
 !reset cash               for when the tables turn against you
 ```
 
-6. (optional) Want your bot to have a little zazz? Add `.zazz.json` file to 
-the root of the bot directory. An example zazz file looks like:
+7. (optional) Want your bot to have a little zazz? Add `.zazz.json` file to 
+the root of this directory. An example zazz file looks like:
 
 ```
 {
   "cool": [
     ":sunglasses:"
   ],
-  "[bB]ot": [
+  "[bB][oO][tT]": [
     ":robot_face:",
     "beep boop",
     "I am not a :computer:",
-    "/giphy 'never gonna give you up'"
+    "/gif never gonna give you up"
   ]
 }
 ```
@@ -49,6 +50,8 @@ This can be used to capture patterns and return a randomized response against
 that pattern. The above example causes the bot to send a message with the
 sunglasses emoji whenever a command contains "cool", and one of several
 possible responses when the command contains "bot" or "Bot"
+
+\* Note for /gif to work you need need to create a [tenor gif api key](https://tenor.com/developer/dashboard) and put the key in your .discord.json file under the key `gif`
 
 # Controls
 See text interface: https://github.com/akomar812/craps#text-interface
