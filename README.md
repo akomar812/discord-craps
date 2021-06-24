@@ -6,7 +6,7 @@ Discord bot for playing multiplayer [craps](https://github.com/akomar812/craps)
 2. Add bot to server: https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links
 3. Add bot to channel that you would like to play on (currently only one channel is supported so a bot in multiple channels will manage the same game)
 
-4. (optional)^\* Want your bot to have a little zazz? Add `.zazz.json` file to 
+4. (optional)\* Want your bot to have a little zazz? Add `.zazz.json` file to 
 the root of this directory. An example zazz file looks like:
 
 ```
@@ -28,7 +28,7 @@ that pattern. The above example causes the bot to send a message with the
 sunglasses emoji whenever a command contains "cool", and one of several
 possible responses when the command contains "bot" or "Bot"
 
-^\*Note for /gif to work you need need to create a [tenor gif api key](https://tenor.com/developer/dashboard) and put the key in your .discord.json file under the key `gif`
+\*Note for /gif to work you need need to create a [tenor gif api key](https://tenor.com/developer/dashboard) and put the key in your .discord.json file under the key `gif`
 
 5. Create a file called `.discord.json` in the root of this directory and place the application secret under key `token` that should look like:
 
