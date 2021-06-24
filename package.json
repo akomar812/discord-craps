@@ -8,7 +8,7 @@
     "lint": "npx eslint ."
   },
   "author": "",
-  "license": "ISC",
+  "license": "gpl-3.0",
   "dependencies": {
     "discord.js": "^12.5.3"
   },
