@@ -28,6 +28,29 @@ craps game
 !reset cash               for when the tables turn against you
 ```
 
+6. (optional) Want your bot to have a little zazz? Add `.zazz.json` file to 
+the root of the bot directory. An example zazz file looks like:
+
+```
+{
+  "catch": {
+    "cool": [
+      ":sunglasses:"
+    ],
+    "[bB]ot": [
+      ":robot_face:",
+      "beep boop",
+      "I am not a :computer:"
+    ]
+  }
+}
+```
+
+This can be used to capture patterns and return a randomized response against
+that pattern. The above example causes the bot to send a message with the
+sunglasses emoji whenever a command contains "cool", and one of several
+possible responses when the command contains "bot" or "Bot"
+
 # Controls
 See text interface: https://github.com/akomar812/craps#text-interface
 
