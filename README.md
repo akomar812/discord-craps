@@ -33,16 +33,14 @@ the root of the bot directory. An example zazz file looks like:
 
 ```
 {
-  "catch": {
-    "cool": [
-      ":sunglasses:"
-    ],
-    "[bB]ot": [
-      ":robot_face:",
-      "beep boop",
-      "I am not a :computer:"
-    ]
-  }
+  "cool": [
+    ":sunglasses:"
+  ],
+  "[bB]ot": [
+    ":robot_face:",
+    "beep boop",
+    "I am not a :computer:"
+  ]
 }
 ```
 

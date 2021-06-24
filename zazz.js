@@ -6,12 +6,12 @@ class Zazz {
   }
 
   getRandomMessage(regex) {
-    const randomIndex = Math.floor(this.config.catch[regex].length * Math.random());
-    return this.config.catch[regex][randomIndex];
+    const randomIndex = Math.floor(this.config[regex].length * Math.random());
+    return this.config[regex][randomIndex];
   }
 
   up(msg, send) {
-    for (let regex in this.config.catch) {
+    for (let regex in this.config) {
       if ((new RegExp(regex)).test(msg)) {
         send(this.getRandomMessage(regex));
       }
