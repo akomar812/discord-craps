@@ -32,7 +32,7 @@ To use `/gif` create a [tenor gif api key](https://tenor.com/developer/dashboard
 make sure to define it in your `.discord.json` as described in the next step
 
 5. Create a file called `.discord.json` in the root of this directory and place the
-application secret under key `token` that should look like:
+application secret and any optional configuration tokens in the following format:
 
 ```
 {
@@ -41,13 +41,13 @@ application secret under key `token` that should look like:
 }
 ```
 
-6. Start bot server
+6. Start the bot server
 
 ```
 npm run start
 ```
 
-7. Verify bot is running by sending `!help` in discord channel, you should see:
+7. Verify the bot is running by sending `!help` in discord channel, you should see:
 
 ```
 craps game
