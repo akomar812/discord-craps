@@ -1,14 +1,14 @@
 {
   "name": "discord-craps",
   "version": "1.0.0",
-  "description": "",
+  "description": "A discord bot for playing craps",
   "main": "index.js",
   "scripts": {
     "start": "node index.js | tee -a \"logs/discord-craps.$(date).log\"",
     "test": "jest --coverage --verbose --detectOpenHandles",
     "lint": "npx eslint ."
   },
-  "author": "",
+  "author": "Andrew Komar",
   "license": "gpl-3.0",
   "dependencies": {
     "discord.js": "^12.5.3",
