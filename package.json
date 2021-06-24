@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js | tee -a \"logs/discord-craps.$(date).log\"",
     "test": "jest --coverage --verbose --detectOpenHandles",
     "lint": "npx eslint ."
   },
