@@ -7,7 +7,9 @@ Discord bot for playing multiplayer [craps](https://github.com/akomar812/craps)
 3. Add bot to channel that you would like to play on (currently only one channel is supported so a bot in multiple channels will manage the same game)
 4. Start bot server
 
-`npm run start`
+```
+npm run start
+```
 
 5. Verify bot is running by sending `!help` in discord channel, you should see:
 
