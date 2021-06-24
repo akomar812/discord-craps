@@ -29,7 +29,7 @@ craps game
 ```
 
 # Controls
-See text interface: https://github.com/akomar812/craps
+See text interface: https://github.com/akomar812/craps#text-interface
 
 # Issues
 Currently the craps dependency isn't published as an installable node module so if you want to use this
