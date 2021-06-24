@@ -2,9 +2,16 @@
 Discord bot for playing multiplayer [craps](https://github.com/akomar812/craps)
 
 # Usage
-1. Setup application: https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot
-2. Add bot to server: https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links
-3. Add bot to channel that you would like to play on (currently only one channel is supported so a bot in multiple channels will manage the same game)
+1. Setup your Discord application:
+
+https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot
+
+2. Add your newly created bot to the desired discord server:
+
+https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links
+
+3. Add your bot to the channel that you would like to play on. Only one channel is
+recommended, a bot in multiple channels will manage the same game
 
 4. (optional) Want your bot to have a little zazz? Add a `.zazz.json` file to 
 the root of this directory to catch regex patterns and apply responses which will
