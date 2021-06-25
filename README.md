@@ -6,10 +6,7 @@ Discord bot for playing multiplayer [craps](https://github.com/akomar812/craps)
 
 2. [Add your newly created bot](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links) to the desired discord server
 
-3. Add your bot to the channel that you would like to play on. Only one channel is
-recommended, a bot in multiple channels will manage the same game
-
-4. (optional) Want your bot to have a little zazz? Add a `.zazz.json` file to 
+3. (optional) Want your bot to have a little zazz? Add a `.zazz.json` file to 
 the root of this directory to catch regex patterns and apply responses which will
 be selected randomly. An example zazz file looks like:
 
@@ -34,15 +31,21 @@ contains "cool", and one of several possible responses when the command contains
 To use `/gif` create a [tenor gif api key](https://tenor.com/developer/dashboard) and
 make sure to define it in your `.discord.json` as described in the next step
 
-5. Create a file called `.discord.json` in the root of this directory and place the
+4. Create a file called `.discord.json` in the root of this directory and place the
 application secret and any optional configuration tokens in the following format:
 
 ```
 {
   "token": "<discord api secret>",
-  "gif": "<tenor api token (optional if using zazz with /gif)>"
+  "gif": "<tenor api token (optional if using zazz with /gif)>",
+  "channels": ["<channel_name_1", ... ,"<channel_name_n">]
 }
 ```
+
+5. In your `.discord.json` file, define the channels you want your bot to respond on.
+Only one public channel is recommended, as a bot in multiple channels will manage the same game.
+It can be useful to have the bot watching a private channel also in case you want to do any
+debugging.
 
 6. Start the bot server
 
