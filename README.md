@@ -42,10 +42,9 @@ application secret and any optional configuration tokens in the following format
 }
 ```
 
-5. In your `.discord.json` file, define the channels you want your bot to respond on.
+5. In your `.discord.json` file, define the channels you want your bot to respond on (see above).
 Only one public channel is recommended, as a bot in multiple channels will manage the same game.
-It can be useful to have the bot watching a private channel also in case you want to do any
-debugging.
+It can also be useful to have the bot in a private channel in case you need to do any debugging.
 
 6. Start the bot server
 

@@ -3,3 +3,5 @@
 **/logs
 .discord.json
 .zazz.json
+index-lite.js
+deploy.sh

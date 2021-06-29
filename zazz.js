@@ -19,14 +19,17 @@ class Zazz {
   }
 
   async up(opts, msg, send) {
+    const messages = [];
+
     for (let regex in this.config) {
       if ((new RegExp(regex)).test(msg)) {
         const msg = await this.getRandomMessage(opts, regex);
         send(msg);
+        messages.push(msg);
       }
     }
 
-    return true;
+    return messages;
   }
 }
 
