@@ -87,7 +87,3 @@ craps game
 # Controls
 The full text interface is documented here: https://github.com/akomar812/craps#text-interface
 
-# Issues
-Currently the craps dependency isn't published as an installable node module so if you want to use this
-make sure to [clone this repo](https://github.com/akomar812/craps) and manually reference the import in this
-repo's `~/index.js` file
