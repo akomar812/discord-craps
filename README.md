@@ -46,13 +46,32 @@ application secret and any optional configuration tokens in the following format
 Only one public channel is recommended, as a bot in multiple channels will manage the same game.
 It can also be useful to have the bot in a private channel in case you need to do any debugging.
 
-6. Start the bot server
+6. Run the process
+
+The process can be run locally if you have node (12.0.0 at the time of this writing) and sqlite
+installed on your local box or it can be run in a container with the provided Dockerfile.
+
+## Running locally
+```
+npm start
+```
+
+## Running in Docker
+
+### Build the docker image
 
 ```
-npm run start
+docker build -t craps-bot .
 ```
 
-7. Verify the bot is running by sending `!help` in discord channel, you should see:
+### Start the container
+
+```
+docker run -d craps-bot
+```
+
+## Verify setup
+Verify the bot is running by sending `!help` in discord channel, you should see:
 
 ```
 craps game
@@ -62,16 +81,11 @@ craps game
 
 !exit                     leave the table
 !help                     show this
-!dice                     show possible dice rolls with expected outputs
-!status                   show the current game state
-!join                     join as a new player starting with $100
-!bet [name] [amount]      make a wager on the craps table
-!roll                     roll the dice
-!reset cash               for when the tables turn against you
+...
 ```
 
 # Controls
-See text interface for complete documentation: https://github.com/akomar812/craps#text-interface
+The full text interface is documented here: https://github.com/akomar812/craps#text-interface
 
 # Issues
 Currently the craps dependency isn't published as an installable node module so if you want to use this

@@ -33,4 +33,4 @@ class Zazz {
   }
 }
 
-module.exports = new Zazz(require('./.zazz.json'));
+module.exports = new Zazz(require('../.zazz.json'));

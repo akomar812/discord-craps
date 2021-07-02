@@ -3,14 +3,18 @@
   "version": "1.0.0",
   "description": "A discord bot for playing craps",
   "main": "index.js",
+  "bin": {
+    "craps-bot": "./bin/craps-bot"
+  },
   "scripts": {
-    "start": "node index.js | tee -a \"logs/discord-craps.$(date).log\"",
+    "start": "node src/index.js | tee -a \"var/log/discord-craps.$(date).log\"",
     "test": "jest --coverage --verbose --detectOpenHandles",
     "lint": "npx eslint ."
   },
   "author": "Andrew Komar",
   "license": "gpl-3.0",
   "dependencies": {
+    "@akomar812/craps": "^1.0.0",
     "discord.js": "^12.5.3",
     "node-fetch": "^2.6.1"
   },

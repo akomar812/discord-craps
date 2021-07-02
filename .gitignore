@@ -1,7 +1,6 @@
 **/node_modules
 **/coverage
-**/logs
+**/var
 .discord.json
 .zazz.json
-index-lite.js
 deploy.sh
